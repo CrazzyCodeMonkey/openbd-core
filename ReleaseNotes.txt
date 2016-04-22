@@ -5,6 +5,7 @@ http://openbd.org/
 https://github.com/OpenBD/openbd-core
 __________________________________
 
+- QueryRun result missing generatedkey #29 
 - fixed typos in AmazonS3Write/GenerateKey functions
 - Add DecodeForHTML function
 - At least Java 8 version support

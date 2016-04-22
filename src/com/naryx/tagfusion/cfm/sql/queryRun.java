@@ -108,10 +108,11 @@ public class queryRun extends functionBase {
 		}
 
 		// Perform the query execution
+		String result = getNamedStringParam( argStruct, "result", null );
+		queryData.setRetrieveGeneratedKeys( result != null );
 		queryData.setQueryString( sql );
 		queryData.runQuery( _session );
 
-		String result = getNamedStringParam( argStruct, "result", null );
 		if ( result != null ) {
 			_session.setData( result, cfQUERY.createResultVar( queryData ) );
 		}
