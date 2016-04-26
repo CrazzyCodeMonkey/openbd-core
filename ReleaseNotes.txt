@@ -5,6 +5,7 @@ http://openbd.org/
 https://github.com/OpenBD/openbd-core
 __________________________________
 
+- ternary operator bug #31
 - QueryRun result missing generatedkey #29 
 - fixed typos in AmazonS3Write/GenerateKey functions
 - Add DecodeForHTML function
